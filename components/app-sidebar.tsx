@@ -21,7 +21,7 @@ import { icon } from "@fortawesome/fontawesome-svg-core";
 const items = [
   {
     title: "Home",
-    url: "#",
+    url: "/",
     icon: Home,
   },
   {
@@ -42,7 +42,7 @@ const items = [
   },
   {
     title: "Services",
-    url: "#",
+    url: "/pages/Services",
     icon: SquareSlash  ,
   },
   {
@@ -59,7 +59,7 @@ export function AppSidebar() {
       <SidebarContent>
         <SidebarGroup>
           <SidebarHeader className="font-bold mb-4 border-b pb-4">
-            <Link href="#" className="flex w-full justify-between">
+            <Link href="/" className="flex w-full justify-between">
                <div className="flex items-center">
                   <Image src="/upload/heavenly.png" alt="Uploaded Image" width={33} height={33}/>
                   <div className="flex flex-col">
