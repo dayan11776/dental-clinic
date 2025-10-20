@@ -10,7 +10,7 @@ export default function Service(){
     offer:string,
     content:string
     image:string
-    other:[]
+    other:string[]
 }
 
   const [filter,setFilter] = useState<service | null>(null)

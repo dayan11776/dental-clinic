@@ -4,7 +4,7 @@ import { Facebook, Instagram,MapPin,Phone,Mail  } from 'lucide-react';
 
 export const Footer = () => {
   return (
-    <footer className="bg-green-300 px-33 py-7 dark:bg-green-500 max-sm:px-7">
+    <footer className="bg-green-300 px-33 py-7 dark:bg-green-400 max-sm:px-7">
         <div className="flex mb-17 max-sm:flex-col ">
             <div className="w-1/2 max-sm:w-full max-sm:items-center max-sm:justify-center max-sm:flex max-sm:flex-col max-sm:mb-4">
                 <div className="flex items-center mb-7">
@@ -42,14 +42,15 @@ export const Footer = () => {
                             <span>Treatment</span>
                             <span>Dentures</span>
                             <span>Crown & Bridges</span>
+                            <span>Extraction</span>
                         </p>
                     </div>
 
                     <div className="flex flex-col">
                         <span className="text-lg mb-3 font-medium">Hours</span>
                         <p className="flex flex-col">
-                            <span>Tuesday- Sunday</span>
-                            <span>10:00 AM to 7:00 PM</span>
+                            <span>Monday - Saturday</span>
+                            <span>7:00 AM to 5:00 PM</span>
                         </p>
                     </div>
                 </div>
@@ -59,11 +60,11 @@ export const Footer = () => {
                         <p className="flex flex-col ">
                             <span className="flex items-center max-sm:flex-col">
                                 <Phone className="mr-2" width={17} height={17}/>
-                                Smart: (+63) 998-553-7185
+                                Smart: (+63) 932-856-4955
                             </span>
                             <span className="flex items-center max-sm:flex-col">
                                 <Mail  className="mr-2" width={17} height={17}/>
-                                rugasnelyn@gmail.com
+                                test@gmail.com
                             </span>
                         </p>
                     </div>
