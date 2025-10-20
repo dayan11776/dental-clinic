@@ -14,8 +14,8 @@ export const About = () => {
             <SplitText
                 text="Smile like you mean it!"
                 className="text-3xl font-semibold w-fit max-sm:text-2xl"
-                delay={100}
-                duration={0.6}
+                delay={150}
+                duration={0.7}
                 ease="power3.out"
                 splitType="chars"
                 from={{ opacity: 0, y: 40 }}
@@ -33,8 +33,8 @@ export const About = () => {
         <span>procedures.</span>
         </p>
         <div className="max-sm:flex max-sm:justify-center">
-        <Link href="/pages/Appointment" className="flex items-center text-white mr-3 shadow py-2 px-4 rounded-2xl bg-white  w-fit dark:border transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:shadow-xl">
-            <span className="uppercase font-bold text-green-700 hover:text-green-800">Book now</span>
+        <Link href="/pages/Appointment" className="flex items-center text-white mr-3 shadow py-2 px-4 rounded-2xl bg-gray-200 w-fit dark:border transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:shadow-xl">           
+          <span className="uppercase font-bold text-green-700 hover:text-green-800">Book now</span>
         </Link>
         </div>
         </div>

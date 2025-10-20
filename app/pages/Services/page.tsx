@@ -1,8 +1,21 @@
+'use client'
 import { CarouselSize } from '@/app/components/layout/carousel'
-import React from 'react'
+import React, {useState}from 'react'
 import { Services } from './components/card'
+import { Modal } from './components/modal'
 
 export default function Service(){
+
+  type service = {
+    offer:string,
+    content:string
+    image:string
+    other:[]
+}
+
+  const [filter,setFilter] = useState<service | null>(null)
+  const [modal, setModal] = useState(false)
+  
   return (
     <main>
       <section className='py-12 m-auto'>
@@ -13,9 +26,12 @@ export default function Service(){
         </div>
         <div className='max-w-7xl m-auto py-7'>
           <div className='flex flex-wrap justify-start other:justify-evenly '>
-            <Services />
+            <Services  setFilter={setFilter} setModal={setModal}/>
           </div>
         </div>
+        {
+          modal && <Modal filter={filter} setModal={setModal}/>
+        }
       </section>
     </main>
   )

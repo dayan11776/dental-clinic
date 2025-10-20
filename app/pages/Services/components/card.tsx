@@ -1,46 +1,172 @@
 import React from 'react'
-import Link from 'next/link'
 import Image from 'next/image'
 
 const services = [
   {
-    offer:"Cleanings",
+    offer:"Cleaning",
     content:"It is important for patients to go to the dentist for oral prophylaxis, otherwise known as a cleaning.",
-    image:"/upload/cleaning.jpg"
+    image:"/upload/cleaning.jpg",
+    other:[
+      "A professional procedure that removes plaque, tartar, and stains from teeth",
+      "Helps prevent gum disease, cavities, and bad breath",
+      "Helps prevent tooth decay and gum disease",
+      "Keeps your breath fresh and mouth healthy",
+      "Makes teeth look cleaner and brighter",
+      "Allows the dentist to check for early signs of dental problems",
+      "Promotes overall oral health and hygiene",
+      "Recommended every six months for best results"
+    ]
   },
   {
     offer:"Braces",
     content:"Braces are orthodontic devices used to straighten teeth, correct bite issues, and improve overall oral health and aesthetics.",
-    image:"/upload/braces.jpg"
+    image:"/upload/braces.jpg",
+    other:[
+      "Straighten misaligned or crooked teeth",
+      "Correct bite problems such as overbite, underbite, or crossbite",
+      "Improve smile appearance and confidence",
+      "Make teeth easier to clean, reducing risk of decay and gum disease",
+      "Can prevent jaw pain or speech difficulties caused by misalignment",
+      "Available in different types — metal, ceramic, or clear aligners",
+      "Treatment duration usually ranges from 1 to 3 years, depending on the case"
+    ]
   },
   {
-    offer:"Extractions",
+    offer:"Extraction",
     content:"Dental extractions are procedures to remove teeth that are damaged, decayed, or causing other dental issues, and they can be performed for various reasons.",
-    image:"/upload/extraction.jpg"
+    image:"/upload/extraction.jpg",
+    other:[
+      "Removes severely decayed, damaged, or infected teeth",
+      "Helps relieve pain and prevent the spread of infection",
+      "Creates space for orthodontic treatments like braces",
+      "May be necessary for impacted teeth, such as wisdom teeth",
+      "Performed under local anesthesia for a comfortable experience",
+      "Promotes better oral health by eliminating problem teeth",
+      "Proper aftercare helps ensure quick and smooth healing"
+    ]
   },
   {
-    offer:"Dental X-Rays",
+    offer:"Dental X-Ray",
     content:"Dental X-rays are essential diagnostic tools used by dentists to evaluate oral health. They help detect issues such as cavities, bone loss, and infections that may not be visible during a regular examination.",
-    image:"/upload/X_ray.jpg"
+    image:"/upload/X_ray.jpg",
+    other:[
+      "Helps detect hidden dental problems not visible during a regular exam",
+      "Shows cavities, bone loss, and infections below the gum line",
+      "Assists in checking tooth roots and jawbone health",
+      "Guides dentists in treatment planning, such as braces or implants",
+      "Quick, safe, and painless procedure",
+      "Uses low levels of radiation with modern digital technology",
+      "Essential for early diagnosis and preventive dental care"
+    ]
   },
   {
-    offer:"Root Canals",
+    offer:"Root Canal",
     content:"A root canal is a dental procedure designed to treat and preserve a tooth with infected or damaged pulp, relieving pain and preventing further infection.",
-    image:"/upload/root_canal.jpg"
+    image:"/upload/root_canal.jpg",
+    other:[
+      "Treats infected or damaged tooth pulp to save the natural tooth",
+      "Relieves severe tooth pain and sensitivity",
+      "Prevents the spread of infection to surrounding teeth and gums",
+      "Involves cleaning, disinfecting, and sealing the inside of the tooth",
+      "Usually completed in one or two dental visits",
+      "Preserves tooth structure and function for long-term oral health",
+      "Often followed by a dental crown for added protection and strength"
+    ]
   },
   {
-    offer:"Bridge",
+    offer:"Bridges",
     content:"A dental bridge is a common dental restoration used to replace one or more missing teeth by literally bridging the gap between remaining teeth",
-    image:"/upload/bridge.jpg"
+    image:"/upload/bridge.jpg",
+    other:[
+      "Replace one or more missing teeth using adjacent teeth for support",
+      "Restore natural appearance and function of your smile",
+      "Improve chewing and speaking ability",
+      "Prevent shifting of nearby teeth into empty spaces",
+      "Help maintain proper bite and facial structure",
+      "Made from durable materials like porcelain or ceramic",
+      "Fixed solution that looks and feels natural"
+    ]
   },
   {
     offer:"Crown",
     content:"A dental crown is a tooth-shaped cap placed over a damaged or weakened tooth to restore its shape, size, strength, and appearance. It fully encases the visible part of the tooth above the gum line.",
-    image:"/upload/crown.jpg"
+    image:"/upload/crown.jpg",
+    other:[
+      "Restore damaged, cracked, or decayed teeth",
+      "Protect weak teeth from further breaking",
+      "Improve the shape, size, and appearance of a tooth",
+      "Commonly used after root canal treatment for added strength",
+      "Made from durable materials like porcelain, ceramic, or metal",
+      "Blend naturally with existing teeth for a seamless look",
+      "Long-lasting solution with proper oral care"
+    ]
+  },
+  {
+    offer:"Veneers",
+    content:"Dental veneers are thin, custom-made shells designed to cover the front surface of teeth to improve their appearance. They are commonly made from porcelain or composite resin materials and are bonded permanently to your teeth.",
+    image:"/upload/veneers.jpg",
+    other:[
+      "Thin, custom-made shells placed on the front of teeth",
+      "Improve the color, shape, and alignment of teeth",
+      "Cover stains, chips, gaps, and minor imperfections",
+      "Provide a natural, bright, and attractive smile",
+      "Made from durable porcelain or composite material",
+      "Require minimal tooth preparation",
+      "Long-lasting with proper oral hygiene and care"
+    ]
+  },
+  {
+    offer:"Treatment",
+    content:"Dental treatment refers to any procedure or care provided by a dentist to maintain, restore, or improve the health and function of your teeth, gums, and mouth. Treatments can be preventive, restorative, cosmetic, or surgical — depending on your dental needs.",
+    image:"/upload/treatment.jpg",
+    other:[
+      "Includes a wide range of procedures to maintain and restore oral health",
+      "Treats issues such as cavities, gum disease, and tooth damage",
+      "Helps relieve pain and prevent further dental problems",
+      "Improves the appearance and function of teeth",
+      "Promotes overall oral hygiene and long-term dental wellness",
+      "May involve restorative, cosmetic, or preventive care",
+      "Performed by dental professionals using safe and modern techniques"
+    ]
+  },
+  {
+    offer:"Denture",
+    content:"A denture is a removable replacement for missing teeth and surrounding tissues. They help restore your smile, chewing ability, and speech when natural teeth are lost due to decay, injury, or gum disease.",
+    image:"/upload/dentures.jpg",
+    other:[
+      "Replace missing teeth to restore your smile and confidence",
+      "Improve chewing, speaking, and overall oral function",
+      "Available as full or partial dentures, depending on tooth loss",
+      "Custom-made for a comfortable and natural fit",
+      "Help maintain facial structure and prevent sagging",
+      "Easy to remove for cleaning and maintenance",
+      "Affordable and effective solution for missing teeth"
+    ]
   }
 ]
 
-export const Services = () => {
+type service = {
+    offer:string,
+    content:string
+    image:string
+    other:string[]
+}
+
+type ChildProps = {
+  setFilter:React.Dispatch<React.SetStateAction<service | null>>
+  setModal:React.Dispatch<React.SetStateAction<boolean>>
+}
+
+
+export const Services:React.FC<ChildProps> = ({setFilter,setModal}) => {
+
+  function handleFilter(id: number) {
+    const getService = services[id];
+    
+    setFilter(getService);
+    setModal(true)
+  }
+
   return (
     <>
       {
@@ -54,12 +180,12 @@ export const Services = () => {
                   </div>
                 
               </div>
-              <Link href="#" className="absolute bottom-0 m-5 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
+              <button onClick={() => handleFilter(index)} className="cursor-pointer absolute bottom-0 m-5 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
                   Read more
                   <svg className="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                       <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
                   </svg>
-              </Link>
+              </button>
           </div>
         ))
       }
