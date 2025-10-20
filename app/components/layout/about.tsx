@@ -28,18 +28,18 @@ export const About = () => {
         </div>
         </div>
         <p className="flex flex-col text-start text-2xl flex-wrap mb-7 max-sm:text-center">
-        <span>The Center for Implant & General Dentistry that is committed</span>
-        <span>to providing patients with the most advanced dental </span>
-        <span>procedures.</span>
+          <span>The Center for Implant & General Dentistry that is committed</span>
+          <span>to providing patients with the most advanced dental </span>
+          <span>procedures.</span>
         </p>
         <div className="max-sm:flex max-sm:justify-center">
-        <Link href="/pages/Appointment" className="flex items-center text-white mr-3 shadow py-2 px-4 rounded-2xl bg-gray-200 w-fit dark:border transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:shadow-xl">           
-          <span className="uppercase font-bold text-green-700 hover:text-green-800">Book now</span>
-        </Link>
+          <Link href="/pages/Appointment" className="flex items-center text-white mr-3 shadow py-2 px-4 rounded-2xl bg-gray-200 w-fit dark:border transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:shadow-xl">            
+            <span className="uppercase font-bold text-green-700 hover:text-green-800">Book now</span>
+          </Link>
         </div>
         </div>
         <div className="">
-        <Image src="/background/dental.png" alt="Uploaded Image" className=" top-0 right-0" width={700} height={700}/>
+          <Image src="/background/dental.png" alt="Uploaded Image" className=" top-0 right-0" width={700} height={700}/>
         </div>
     </div>
   )
