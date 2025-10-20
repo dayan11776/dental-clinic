@@ -2,13 +2,11 @@
 import * as React from "react"
 import Autoplay from "embla-carousel-autoplay"
 import Image from "next/image"
-import { Card, CardContent } from "@/components/ui/card"
+import { Card } from "@/components/ui/card"
 import {
   Carousel,
   CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
+  CarouselItem
 } from "@/components/ui/carousel"
 
 export function CarouselSize() {
